@@ -33,6 +33,20 @@ class LoginVC: UIViewController {
     
     @IBAction func loginPressed(_ sender: Any) {
         Properties.sharedInstance.prepForAnimation(button: loginButton, view: self.view)
+        
+        guard let username = usernameTextField.text , usernameTextField.text != "" else {
+            return
+        }
+        
+        guard let password = passwordTextField.text , passwordTextField.text != "" else {
+            return
+        }
+        
+        AuthService.sharedInstance.loginUser(username: username, password: password) { (success) in
+            if success {
+                print("User logged in with token : \(AuthService.sharedInstance.accessToken)")
+            }
+        }
     }
     
 }

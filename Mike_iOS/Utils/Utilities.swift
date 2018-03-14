@@ -11,6 +11,19 @@ import UIKit
 
 typealias CompletionHandler = (_ Success: Bool) -> ()
 
+//URL Constants
+let BASE_URL = "https://mike.arrogant.space/v1/"
+let URL_LOGIN = "\(BASE_URL)login"
+
+//Headers
+let HEADER = [
+    "Content-Type": "application/json; charset=utf-8"
+]
+
+//User Defaults
+let TOKEN_SESSION = "token"
+let USER_EMAIL = "userEmail"
+
 extension UIButton {
     func loadingIndicator(show: Bool) {
         if show {

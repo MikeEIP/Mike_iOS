@@ -13,6 +13,8 @@
 		3F9F37672058276900BC1C80 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9F37662058276900BC1C80 /* Utilities.swift */; };
 		3F9F3769205827A500BC1C80 /* Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9F3768205827A500BC1C80 /* Properties.swift */; };
 		3F9F376B2058280700BC1C80 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9F376A2058280700BC1C80 /* APIManager.swift */; };
+		3F9F376D2059658D00BC1C80 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9F376C2059658D00BC1C80 /* RegisterVC.swift */; };
+		3F9F37702059888900BC1C80 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9F376F2059888900BC1C80 /* AuthService.swift */; };
 		3FED0E3E2056AD80005F3F4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FED0E3D2056AD80005F3F4F /* AppDelegate.swift */; };
 		3FED0E432056AD80005F3F4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FED0E412056AD80005F3F4F /* Main.storyboard */; };
 		3FED0E462056AD80005F3F4F /* Mike_iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3FED0E442056AD80005F3F4F /* Mike_iOS.xcdatamodeld */; };
@@ -45,6 +47,8 @@
 		3F9F37662058276900BC1C80 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		3F9F3768205827A500BC1C80 /* Properties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Properties.swift; sourceTree = "<group>"; };
 		3F9F376A2058280700BC1C80 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		3F9F376C2059658D00BC1C80 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		3F9F376F2059888900BC1C80 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		3FED0E3A2056AD80005F3F4F /* Mike_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mike_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FED0E3D2056AD80005F3F4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FED0E422056AD80005F3F4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -126,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				3F9F37632058200400BC1C80 /* LoginVC.swift */,
+				3F9F376C2059658D00BC1C80 /* RegisterVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -137,6 +142,14 @@
 				3F9F3768205827A500BC1C80 /* Properties.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		3F9F376E2059887A00BC1C80 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3F9F376F2059888900BC1C80 /* AuthService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		3FED0E312056AD80005F3F4F = {
@@ -164,6 +177,7 @@
 		3FED0E3C2056AD80005F3F4F /* Mike_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				3F9F376E2059887A00BC1C80 /* Services */,
 				3F9F37652058275B00BC1C80 /* Utils */,
 				3F9F376220581F9F00BC1C80 /* Controller */,
 				3F9F376120581F9A00BC1C80 /* View */,
@@ -419,10 +433,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Mike_iOS/Pods-Mike_iOS-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -506,8 +522,10 @@
 				3FED0E462056AD80005F3F4F /* Mike_iOS.xcdatamodeld in Sources */,
 				3FED0E3E2056AD80005F3F4F /* AppDelegate.swift in Sources */,
 				3F9F37672058276900BC1C80 /* Utilities.swift in Sources */,
+				3F9F376D2059658D00BC1C80 /* RegisterVC.swift in Sources */,
 				3F9F3769205827A500BC1C80 /* Properties.swift in Sources */,
 				3F9F37642058200400BC1C80 /* LoginVC.swift in Sources */,
+				3F9F37702059888900BC1C80 /* AuthService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

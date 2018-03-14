@@ -9,6 +9,7 @@ target 'Mike_iOS' do
 
   # Pods for Mike_iOS
   pod 'Alamofire'
+  pod 'SwiftyJSON'
   
   target 'Mike_iOSTests' do
     inherit! :search_paths
