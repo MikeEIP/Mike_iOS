@@ -10,6 +10,7 @@ target 'Mike_iOS' do
   # Pods for Mike_iOS
   pod 'Alamofire'
   pod 'SwiftyJSON'
+  pod 'DatePickerDialog'
   
   target 'Mike_iOSTests' do
     inherit! :search_paths

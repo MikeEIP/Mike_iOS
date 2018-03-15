@@ -14,6 +14,7 @@ typealias CompletionHandler = (_ Success: Bool) -> ()
 //URL Constants
 let BASE_URL = "https://mike.arrogant.space/v1/"
 let URL_LOGIN = "\(BASE_URL)login"
+let URL_REGISTER = "\(BASE_URL)user"
 
 //Headers
 let HEADER = [
@@ -23,6 +24,14 @@ let HEADER = [
 //User Defaults
 let TOKEN_SESSION = "token"
 let USER_EMAIL = "userEmail"
+let FIRST_NAME = "firstName"
+let LAST_NAME = "lastName"
+let COUNTRY = "France"
+let CITY = "Nice"
+let LANGUAGE = "fr_FR"
+let XP = 0
+let MUSCLOR = 0
+let PROFILE_PICTURE = "profilePicture"
 
 extension UIButton {
     func loadingIndicator(show: Bool) {

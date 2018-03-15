@@ -1,15 +1,18 @@
 PODS:
   - Alamofire (4.6.0)
+  - DatePickerDialog (2.0)
   - SwiftyJSON (4.0.0)
 
 DEPENDENCIES:
   - Alamofire
+  - DatePickerDialog
   - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  DatePickerDialog: 5e1c24d9fe6506cd45dbc573eed7b0a251b1c09d
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
 
-PODFILE CHECKSUM: 1693d8a47e56af556df8198d4fa9ae05a903a334
+PODFILE CHECKSUM: 183bea2d5b0fc263abeaa3b69e68fb258ed7b89a
 
 COCOAPODS: 1.4.0

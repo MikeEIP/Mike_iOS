@@ -59,4 +59,31 @@ class AuthService {
             }
         }
     }
+    
+    func registerUser(username: String, password: String, birthdate: String, completion: @escaping CompletionHandler) {
+        
+        let body: [String: Any] = [
+            "username": username,
+            "lastname": LAST_NAME,
+            "firstname": FIRST_NAME,
+            "email": USER_EMAIL,
+            "birthday": birthdate,
+            "country": COUNTRY,
+            "city": CITY,
+            "language": LANGUAGE,
+            "xp": XP,
+            "musclor": MUSCLOR,
+            "profilPicture": PROFILE_PICTURE,
+            "password": password
+        ]
+        
+        Alamofire.request(URL_REGISTER, method: .post, parameters: body, encoding: JSONEncoding.default, headers: HEADER).responseJSON { (response) in
+            if response.result.error == nil {
+                completion(true)
+            } else {
+                completion(false)
+                debugPrint(response.result.error as Any)
+            }
+        }
+    }
 }

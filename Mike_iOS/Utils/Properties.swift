@@ -32,4 +32,10 @@ class Properties {
             button.loadingIndicator(show: true)
         }, completion: nil)
     }
+    
+    func setButtonStyle(button: UIButton) {
+        button.layer.cornerRadius = button.frame.height / 2
+        button.layer.borderWidth = 2
+        button.layer.borderColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+    }
 }
