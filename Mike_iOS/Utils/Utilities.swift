@@ -33,7 +33,6 @@ let XP = 0
 let MUSCLOR = 0
 let PROFILE_PICTURE = "profilePicture"
 
-
 extension UIButton {
     func loadingIndicator(show: Bool) {
         if show {
