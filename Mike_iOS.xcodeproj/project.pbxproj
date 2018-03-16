@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		176817E7205BFED30089F22B /* profileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176817E6205BFED30089F22B /* profileVC.swift */; };
 		1D3971AC8B7FEE4D2140F50A /* Pods_Mike_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53DBC4F50373C2E17A71DA00 /* Pods_Mike_iOS.framework */; };
 		32ECD41AF96B080F3D6592BA /* Pods_Mike_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 414ADDA80C18250A51365FC3 /* Pods_Mike_iOSUITests.framework */; };
 		3F9F37642058200400BC1C80 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9F37632058200400BC1C80 /* LoginVC.swift */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		176817E6205BFED30089F22B /* profileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileVC.swift; sourceTree = "<group>"; };
 		3F9F37632058200400BC1C80 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		3F9F37662058276900BC1C80 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		3F9F3768205827A500BC1C80 /* Properties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Properties.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 			children = (
 				3F9F37632058200400BC1C80 /* LoginVC.swift */,
 				3F9F376C2059658D00BC1C80 /* RegisterVC.swift */,
+				176817E6205BFED30089F22B /* profileVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -513,6 +516,7 @@
 				3FED0E3E2056AD80005F3F4F /* AppDelegate.swift in Sources */,
 				3F9F37672058276900BC1C80 /* Utilities.swift in Sources */,
 				3F9F376D2059658D00BC1C80 /* RegisterVC.swift in Sources */,
+				176817E7205BFED30089F22B /* profileVC.swift in Sources */,
 				3F9F3769205827A500BC1C80 /* Properties.swift in Sources */,
 				3F9F37642058200400BC1C80 /* LoginVC.swift in Sources */,
 				3F9F37702059888900BC1C80 /* AuthService.swift in Sources */,
