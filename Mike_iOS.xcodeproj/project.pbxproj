@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1765ADB3205E820900BAF294 /* FriendListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1765ADB2205E820900BAF294 /* FriendListVC.swift */; };
+		1765ADB5205F1A4500BAF294 /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1765ADB4205F1A4500BAF294 /* FriendTableViewCell.swift */; };
 		176817E7205BFED30089F22B /* profileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176817E6205BFED30089F22B /* profileVC.swift */; };
 		1D3971AC8B7FEE4D2140F50A /* Pods_Mike_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53DBC4F50373C2E17A71DA00 /* Pods_Mike_iOS.framework */; };
 		32ECD41AF96B080F3D6592BA /* Pods_Mike_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 414ADDA80C18250A51365FC3 /* Pods_Mike_iOSUITests.framework */; };
@@ -43,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1765ADB2205E820900BAF294 /* FriendListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendListVC.swift; sourceTree = "<group>"; };
+		1765ADB4205F1A4500BAF294 /* FriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FriendTableViewCell.swift; path = Mike_iOS/Controller/FriendTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		176817E6205BFED30089F22B /* profileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileVC.swift; sourceTree = "<group>"; };
 		3F9F37632058200400BC1C80 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		3F9F37662058276900BC1C80 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
@@ -122,6 +126,7 @@
 		3F9F376120581F9A00BC1C80 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1765ADB4205F1A4500BAF294 /* FriendTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -129,6 +134,7 @@
 		3F9F376220581F9F00BC1C80 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1765ADB2205E820900BAF294 /* FriendListVC.swift */,
 				3F9F37632058200400BC1C80 /* LoginVC.swift */,
 				3F9F376C2059658D00BC1C80 /* RegisterVC.swift */,
 				176817E6205BFED30089F22B /* profileVC.swift */,
@@ -519,7 +525,9 @@
 				176817E7205BFED30089F22B /* profileVC.swift in Sources */,
 				3F9F3769205827A500BC1C80 /* Properties.swift in Sources */,
 				3F9F37642058200400BC1C80 /* LoginVC.swift in Sources */,
+				1765ADB5205F1A4500BAF294 /* FriendTableViewCell.swift in Sources */,
 				3F9F37702059888900BC1C80 /* AuthService.swift in Sources */,
+				1765ADB3205E820900BAF294 /* FriendListVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
