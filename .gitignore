@@ -1,4 +1,4 @@
 *.xcuserstate
-Mike_iOS.xcworkspace/
-xcuserdata/
+Mike_iOS.xcworkspace/xcuserdata/
 .DS_Store
+Pods/
