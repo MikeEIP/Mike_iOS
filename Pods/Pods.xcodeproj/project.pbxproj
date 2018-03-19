@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -78,9 +78,9 @@
 		0F2E9D07A7FFCAD570E178F5320571CA /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
 		10EB3D8FA30C6DB3ED9D039B53C189C0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15B35E687EB70E2C51AE65C42E131757 /* Pods-Mike_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Mike_iOS.release.xcconfig"; sourceTree = "<group>"; };
-		17EFC87A23398A051F6FF6A96F2A38D7 /* Pods_Mike_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Mike_iOSTests.framework; path = "Pods-Mike_iOSTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		18D4F40FE7C6BE23C91A5EB2B6D92928 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1F493871F3B657FF63C4E8B2AFDF701B /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		17EFC87A23398A051F6FF6A96F2A38D7 /* Pods_Mike_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mike_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		18D4F40FE7C6BE23C91A5EB2B6D92928 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F493871F3B657FF63C4E8B2AFDF701B /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2225B64D4860FEF01842BA89BB6C45B5 /* DatePickerDialog-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DatePickerDialog-umbrella.h"; sourceTree = "<group>"; };
 		2B1564799E22E39F847A832D417892C9 /* Pods-Mike_iOSTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Mike_iOSTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		2D1027819DA131E5964194BC0C3FA3FA /* Pods-Mike_iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Mike_iOS-umbrella.h"; sourceTree = "<group>"; };
@@ -93,10 +93,10 @@
 		453030D4E9B552ACFDC7A8F382E614D4 /* Pods-Mike_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Mike_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		46B8951521A35CCD9D213E1EBC62FC65 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
 		472B5183BBDBCDBF1EB2624166F531BA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4B3F2DD8FDBFB2B2E774E415D3EA90B7 /* Pods_Mike_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Mike_iOSUITests.framework; path = "Pods-Mike_iOSUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B3F2DD8FDBFB2B2E774E415D3EA90B7 /* Pods_Mike_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mike_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C199AE8CFB6F63D6C6A9F443D6F5AC9 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
 		525E4495062B03A1E2F0601BCD60A4E8 /* Pods-Mike_iOSUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Mike_iOSUITests-umbrella.h"; sourceTree = "<group>"; };
-		54023F598665CBCBB20A4FD66FEAB653 /* Pods-Mike_iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Mike_iOS.modulemap"; sourceTree = "<group>"; };
+		54023F598665CBCBB20A4FD66FEAB653 /* Pods-Mike_iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Mike_iOS.modulemap"; sourceTree = "<group>"; };
 		558F2C7FED996F67CAFFFA4405A2280C /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
 		5AC426E9C110608534E4ACD661DB6ECF /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
 		5ADFD5855FD9C5E519E1E2137B1B0796 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
@@ -112,34 +112,34 @@
 		7D75AA01698DA3F2F0240438619375CB /* Pods-Mike_iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Mike_iOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		7EDB5064A61519FB673B9AC9F431D793 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
 		7F8FC4C8B26F59C598BF437A135F325F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		80B0CF615DCFC1B54BC613E9DAC01F74 /* Pods-Mike_iOSUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Mike_iOSUITests.modulemap"; sourceTree = "<group>"; };
+		80B0CF615DCFC1B54BC613E9DAC01F74 /* Pods-Mike_iOSUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Mike_iOSUITests.modulemap"; sourceTree = "<group>"; };
 		824F6F7E50205E757C43E37DCF55E435 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
 		82D05497D3B7E7C4CBA7A112D4563F44 /* Pods-Mike_iOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Mike_iOS-acknowledgements.plist"; sourceTree = "<group>"; };
 		885CFF4CDE0502E4884EA051C6328722 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
 		88B2D3F05B279FF3319FAD634E0063B7 /* Pods-Mike_iOSUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Mike_iOSUITests-frameworks.sh"; sourceTree = "<group>"; };
 		90819C909880D804F41AC193DE4248CE /* Pods-Mike_iOS-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Mike_iOS-frameworks.sh"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9458659331F70FDFD0E143B1B52DB1EB /* Pods-Mike_iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Mike_iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		95F7FAADF8FF0E99C2D044270F4660E6 /* Pods-Mike_iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Mike_iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
-		97F565A61B6D4C5A03CB1AB28B67B0C7 /* DatePickerDialog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DatePickerDialog.framework; path = DatePickerDialog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97F565A61B6D4C5A03CB1AB28B67B0C7 /* DatePickerDialog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DatePickerDialog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A9AFF6C654514D60631B15D5D70381B /* Pods-Mike_iOS-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Mike_iOS-resources.sh"; sourceTree = "<group>"; };
-		9CDA1CAEEF287D12087410804212504A /* Pods-Mike_iOSTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Mike_iOSTests.modulemap"; sourceTree = "<group>"; };
+		9CDA1CAEEF287D12087410804212504A /* Pods-Mike_iOSTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Mike_iOSTests.modulemap"; sourceTree = "<group>"; };
 		9D3CB0276D0826C2D23D01D28EA0EC24 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
 		9F176B58F08EE25BE3391D05936E666F /* DatePickerDialog-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DatePickerDialog-prefix.pch"; sourceTree = "<group>"; };
 		A12EA7C4487750F7D2EEFAB292CF2298 /* Pods-Mike_iOSUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Mike_iOSUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		A72A621A02EBE2F90C49395FF67669D3 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		A72A621A02EBE2F90C49395FF67669D3 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Alamofire.modulemap; sourceTree = "<group>"; };
 		AC3B22B334803546884B5A76876B6160 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3CCEE84E7C2EDC500EE02237D49073F /* Pods-Mike_iOSTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Mike_iOSTests-umbrella.h"; sourceTree = "<group>"; };
 		B550599383732DDF0EFFB57BB2B77C52 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C16BF078D8819B6F64AEA9372A408FB1 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		C16BF078D8819B6F64AEA9372A408FB1 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
 		C292CB72FDDFF7E00DA815646EC798FB /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
 		C6EC13CAB5F84C09569225844F0FB187 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9972F3BB2CC74334E2714C070CD935B /* DatePickerDialog.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DatePickerDialog.xcconfig; sourceTree = "<group>"; };
 		CA9975113187906D4CB4F503E46F44C1 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
 		CAA5F135215AE5D3A5761DAF3230BB63 /* Pods-Mike_iOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Mike_iOS-acknowledgements.markdown"; sourceTree = "<group>"; };
 		CD2A93F530EFBE987981143DE6330341 /* Pods-Mike_iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Mike_iOS-dummy.m"; sourceTree = "<group>"; };
-		E06861C7D96549775332F67D735FA0C6 /* DatePickerDialog.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = DatePickerDialog.modulemap; sourceTree = "<group>"; };
-		E6F150446B3D1C38CD82F0F28633D34C /* Pods_Mike_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Mike_iOS.framework; path = "Pods-Mike_iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E06861C7D96549775332F67D735FA0C6 /* DatePickerDialog.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = DatePickerDialog.modulemap; sourceTree = "<group>"; };
+		E6F150446B3D1C38CD82F0F28633D34C /* Pods_Mike_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mike_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9227979C39E5780F4348FAC22BA13B7 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
 		EE1DB434DCB4066ABB1AB278154F833E /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
 		F0DDF78459D042D51A75DA3EE8D8E780 /* Pods-Mike_iOSTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Mike_iOSTests-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -220,7 +220,6 @@
 				79DEC7F628C3BF09F97C060B798A2B70 /* DatePickerDialog.swift */,
 				00CEEABEDC739CA0E476D47E2EFD8CDB /* Support Files */,
 			);
-			name = DatePickerDialog;
 			path = DatePickerDialog;
 			sourceTree = "<group>";
 		};
@@ -258,7 +257,6 @@
 				36E8958A81F5CA279E338683D5ED7102 /* SwiftyJSON.swift */,
 				B6194E1571B5B9FF42E6EF510A023022 /* Support Files */,
 			);
-			name = SwiftyJSON;
 			path = SwiftyJSON;
 			sourceTree = "<group>";
 		};
@@ -350,7 +348,6 @@
 				EE1DB434DCB4066ABB1AB278154F833E /* Validation.swift */,
 				3EFE389809DC504BC89AEE6A53FBA298 /* Support Files */,
 			);
-			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
@@ -568,7 +565,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0920;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -735,6 +732,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;

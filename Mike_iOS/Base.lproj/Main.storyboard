@@ -22,7 +22,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MQ6-nI-TIw">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MQ6-nI-TIw" customClass="GradientView" customModule="Mike_iOS" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XBG-Wi-s5b">
@@ -87,13 +87,24 @@
                                             <action selector="registerPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zdq-zA-tpJ"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Credentials error" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kwq-5N-2Zl">
+                                        <rect key="frame" x="143" y="401" width="129" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="129" id="L6C-dm-5Tl"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.50980392159999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="X8Q-1M-YhC" secondAttribute="bottom" constant="190" id="12d-JM-UwH"/>
                                     <constraint firstItem="tlY-Y5-mPO" firstAttribute="top" secondItem="XBG-Wi-s5b" secondAttribute="bottom" constant="2" id="3Fj-fO-aK3"/>
                                     <constraint firstItem="itu-JC-GkM" firstAttribute="centerX" secondItem="MQ6-nI-TIw" secondAttribute="centerX" id="8SK-im-IMU"/>
+                                    <constraint firstItem="Kwq-5N-2Zl" firstAttribute="top" secondItem="8hC-RN-3bC" secondAttribute="bottom" constant="5" id="TtB-Yh-ope"/>
                                     <constraint firstItem="tlY-Y5-mPO" firstAttribute="centerX" secondItem="MQ6-nI-TIw" secondAttribute="centerX" id="UV2-lY-GsE"/>
+                                    <constraint firstItem="Kwq-5N-2Zl" firstAttribute="centerX" secondItem="MQ6-nI-TIw" secondAttribute="centerX" id="Uew-0J-DJL"/>
                                     <constraint firstAttribute="bottom" secondItem="itu-JC-GkM" secondAttribute="bottom" constant="132" id="cnb-6I-gRx"/>
                                     <constraint firstItem="X8Q-1M-YhC" firstAttribute="centerX" secondItem="MQ6-nI-TIw" secondAttribute="centerX" id="dhS-yp-y6C"/>
                                     <constraint firstItem="L8b-jp-rFT" firstAttribute="top" secondItem="tlY-Y5-mPO" secondAttribute="bottom" constant="41" id="hqd-oY-PBA"/>
@@ -115,6 +126,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="errorLabel" destination="Kwq-5N-2Zl" id="XVa-bl-SRw"/>
                         <outlet property="loginButton" destination="X8Q-1M-YhC" id="oMe-lk-vFq"/>
                         <outlet property="passwordTextField" destination="L8b-jp-rFT" id="Qfb-cH-B05"/>
                         <outlet property="registerButton" destination="itu-JC-GkM" id="Gcr-y3-Vrk"/>
@@ -134,7 +146,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lHX-yH-pnB" customClass="Register">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lHX-yH-pnB" customClass="GradientView" customModule="Mike_iOS" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t4V-5L-0NU">
@@ -214,11 +226,34 @@
                                             <constraint firstAttribute="width" constant="243" id="vO6-IW-rje"/>
                                         </constraints>
                                     </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hHG-dZ-ZsN">
+                                        <rect key="frame" x="34" y="42" width="20" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="a9c-RE-zzp"/>
+                                            <constraint firstAttribute="width" constant="20" id="vTa-35-mfR"/>
+                                        </constraints>
+                                        <state key="normal" image="backbutton"/>
+                                        <connections>
+                                            <action selector="backButtonPressed:" destination="Xey-gR-yC1" eventType="touchUpInside" id="0UV-bU-uxU"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Passwords do not match !" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="spg-d4-ZDP">
+                                        <rect key="frame" x="108" y="399" width="198" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="198" id="oel-uK-oTw"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.50980392159999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstItem="hHG-dZ-ZsN" firstAttribute="top" secondItem="lHX-yH-pnB" secondAttribute="top" constant="42" id="2h2-L8-6MV"/>
+                                    <constraint firstItem="spg-d4-ZDP" firstAttribute="top" secondItem="AaK-Wf-3PH" secondAttribute="bottom" constant="5" id="6h3-tq-aQh"/>
                                     <constraint firstItem="AaK-Wf-3PH" firstAttribute="centerX" secondItem="lHX-yH-pnB" secondAttribute="centerX" id="9Bp-Le-zy8"/>
                                     <constraint firstItem="VgT-Xd-5cF" firstAttribute="top" secondItem="t4V-5L-0NU" secondAttribute="bottom" constant="2" id="Fpm-wR-9be"/>
+                                    <constraint firstItem="spg-d4-ZDP" firstAttribute="centerX" secondItem="lHX-yH-pnB" secondAttribute="centerX" id="RVX-gX-OW6"/>
                                     <constraint firstItem="VgT-Xd-5cF" firstAttribute="centerX" secondItem="lHX-yH-pnB" secondAttribute="centerX" id="RZ0-38-AZl"/>
                                     <constraint firstAttribute="bottom" secondItem="x4l-YH-fDM" secondAttribute="bottom" constant="118" id="SQW-2p-NIm"/>
                                     <constraint firstItem="AaK-Wf-3PH" firstAttribute="top" secondItem="Ilq-j6-1KN" secondAttribute="bottom" constant="2" id="SkS-Tm-hOO"/>
@@ -229,6 +264,7 @@
                                     <constraint firstItem="lSI-cN-XMg" firstAttribute="top" secondItem="omB-Pv-l1A" secondAttribute="bottom" constant="2" id="eiC-f1-451"/>
                                     <constraint firstItem="t4V-5L-0NU" firstAttribute="centerX" secondItem="lHX-yH-pnB" secondAttribute="centerX" id="gId-bm-FaY"/>
                                     <constraint firstItem="Ld5-DW-oTL" firstAttribute="centerX" secondItem="lHX-yH-pnB" secondAttribute="centerX" id="hTW-Vb-Cl0"/>
+                                    <constraint firstItem="hHG-dZ-ZsN" firstAttribute="leading" secondItem="lHX-yH-pnB" secondAttribute="leading" constant="34" id="ofx-9Q-8Wr"/>
                                     <constraint firstItem="omB-Pv-l1A" firstAttribute="top" secondItem="t4V-5L-0NU" secondAttribute="bottom" constant="61" id="v3u-ZZ-3eY"/>
                                     <constraint firstItem="Ld5-DW-oTL" firstAttribute="top" secondItem="Ilq-j6-1KN" secondAttribute="bottom" constant="53" id="wjD-77-yPS"/>
                                     <constraint firstItem="x4l-YH-fDM" firstAttribute="centerX" secondItem="lHX-yH-pnB" secondAttribute="centerX" id="x6f-fJ-21h"/>
@@ -249,13 +285,19 @@
                         <outlet property="birthdate" destination="Ld5-DW-oTL" id="9nE-sf-brp"/>
                         <outlet property="confirmPasswordTextField" destination="Ilq-j6-1KN" id="AHi-Sb-vsk"/>
                         <outlet property="createAccountButton" destination="x4l-YH-fDM" id="iyW-vN-BGm"/>
+                        <outlet property="mismatchLabel" destination="spg-d4-ZDP" id="qgQ-Q1-Ndn"/>
                         <outlet property="passwordTextField" destination="omB-Pv-l1A" id="75x-Fo-DNy"/>
                         <outlet property="usernameTextField" destination="t4V-5L-0NU" id="YqI-ol-rn2"/>
+                        <segue destination="a6j-uS-6kO" kind="unwind" identifier="toLogin" unwindAction="prepareForUnwindWithSegue:" id="mgb-92-AiZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7xk-C2-1tC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="a6j-uS-6kO" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="115.94202898550725" y="26.90217391304348"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="backbutton" width="10" height="17"/>
+    </resources>
 </document>

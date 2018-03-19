@@ -17,6 +17,7 @@ class RegisterVC: UIViewController {
     @IBOutlet weak var confirmPasswordTextField: UITextField!
     @IBOutlet weak var birthdate: UIButton!
     @IBOutlet weak var createAccountButton: UIButton!
+    @IBOutlet weak var mismatchLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,11 +32,11 @@ class RegisterVC: UIViewController {
     
     
     @IBAction func datePickerTapped() {
-        DatePickerDialog().show("DatePicker", doneButtonTitle: "Done", cancelButtonTitle: "Cancel", datePickerMode: .date) {
+        DatePickerDialog().show("Select your birthdate", doneButtonTitle: "Done", cancelButtonTitle: "Cancel", datePickerMode: .date) {
             (date) -> Void in
             if let dt = date {
                 let formatter = DateFormatter()
-                formatter.dateFormat = "MM/dd/yyyy"
+                formatter.dateFormat = "dd/MM/yyyy"
                 self.birthdate.setTitle(formatter.string(from: dt), for: .normal)
             }
         }
@@ -49,6 +50,15 @@ class RegisterVC: UIViewController {
         
         guard let birthday = birthdate.titleLabel?.text, birthdate.titleLabel?.text != "" else { return }
         
+        guard let _ = confirmPasswordTextField.text, confirmPasswordTextField.text == passwordTextField.text else {
+            UIView.animate(withDuration: 1.0, delay: 0.0, options: [], animations: {
+                self.mismatchLabel.alpha = 1
+                self.passwordTextField.shake()
+                self.confirmPasswordTextField.shake()
+            }, completion: nil)
+            return
+        }
+        
         AuthService.sharedInstance.registerUser(username: username, password: password, birthdate: birthday) { (success) in
             self.createAccountButton.setTitle("", for: .normal)
             self.createAccountButton.loadingIndicator(show: true)
@@ -60,6 +70,10 @@ class RegisterVC: UIViewController {
                 print("Can't creat User")
             }
         }
+    }
+    
+    @IBAction func backButtonPressed(_ sender: Any) {
+        performSegue(withIdentifier: "toLogin", sender: nil)
     }
     
 }

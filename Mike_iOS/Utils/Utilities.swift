@@ -32,6 +32,7 @@ let LANGUAGE = "fr_FR"
 let XP = 0
 let MUSCLOR = 0
 let PROFILE_PICTURE = "profilePicture"
+let LOGGED_IN = "loggedIn"
 
 extension UIButton {
     func loadingIndicator(show: Bool) {
@@ -62,6 +63,18 @@ extension UIViewController {
     
     @objc func dismissKeyboard() {
         view.endEditing(true)
+    }
+}
+
+extension UITextField {
+    func shake() {
+        let animation = CABasicAnimation(keyPath: "position")
+        animation.duration = 0.05
+        animation.repeatCount = 5
+        animation.autoreverses = true
+        animation.fromValue = CGPoint(x: self.center.x - 4.0, y: self.center.y)
+        animation.toValue = CGPoint(x: self.center.x + 4.0, y: self.center.y)
+        layer.add(animation, forKey: "position")
     }
 }
 
