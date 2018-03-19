@@ -14,6 +14,7 @@ class LoginVC: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var registerButton: UIButton!
+    @IBOutlet weak var errorLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,8 +29,8 @@ class LoginVC: UIViewController {
     }
 
     @IBAction func loginPressed(_ sender: Any) {
-        Properties.sharedInstance.prepForAnimation(button: loginButton, view: self.view)
-        
+        AuthService.sharedInstance.accessToken = ""
+        print("Previous token: \(AuthService.sharedInstance.accessToken)")
         guard let username = usernameTextField.text , usernameTextField.text != "" else {
             return
         }
@@ -41,6 +42,13 @@ class LoginVC: UIViewController {
         AuthService.sharedInstance.loginUser(username: username, password: password) { (success) in
             if success {
                 print("User logged in with token : \(AuthService.sharedInstance.accessToken)")
+                self.errorLabel.alpha = 0
+            } else {
+                UIView.animate(withDuration: 1.0, delay: 0.0, options: [], animations: {
+                    self.errorLabel.alpha = 1
+                    self.usernameTextField.shake()
+                    self.passwordTextField.shake()
+                }, completion: nil)
             }
         }
     }
@@ -48,6 +56,9 @@ class LoginVC: UIViewController {
     @IBAction func registerPressed(_ sender: Any) {
         performSegue(withIdentifier: "toRegister", sender: nil)
         print("Register Tapped")
+    }
+    
+    @IBAction func prepareForUnwind(segue: UIStoryboardSegue) {
     }
     
 }
