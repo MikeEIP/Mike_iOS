@@ -43,6 +43,7 @@ class LoginVC: UIViewController {
             if success {
                 print("User logged in with token : \(AuthService.sharedInstance.accessToken)")
                 self.errorLabel.alpha = 0
+                self.performSegue(withIdentifier: "toProfile", sender: nil)
             } else {
                 UIView.animate(withDuration: 1.0, delay: 0.0, options: [], animations: {
                     self.errorLabel.alpha = 1

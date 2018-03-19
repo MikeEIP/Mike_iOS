@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WIs-NB-qfn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -132,11 +132,12 @@
                         <outlet property="registerButton" destination="itu-JC-GkM" id="Gcr-y3-Vrk"/>
                         <outlet property="usernameTextField" destination="XBG-Wi-s5b" id="Ias-2w-jIG"/>
                         <segue destination="Xey-gR-yC1" kind="show" identifier="toRegister" id="Yig-bq-2Ph"/>
+                        <segue destination="WIs-NB-qfn" kind="show" identifier="toProfile" id="mXl-u9-ul0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-743" y="27"/>
+            <point key="canvasLocation" x="983" y="865"/>
         </scene>
         <!--RegisterVC-->
         <scene sceneID="k0u-H6-Ove">
@@ -294,7 +295,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7xk-C2-1tC" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="a6j-uS-6kO" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="115.94202898550725" y="26.90217391304348"/>
+            <point key="canvasLocation" x="1842" y="865"/>
         </scene>
         <!--TrainingVC-->
         <scene sceneID="xHx-hg-UZn">
@@ -794,8 +795,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="backbutton" width="10" height="17"/>
         <image name="jean" width="80" height="80"/>
         <image name="push_up" width="904" height="460"/>
-        <image name="backbutton" width="10" height="17"/>
     </resources>
 </document>
