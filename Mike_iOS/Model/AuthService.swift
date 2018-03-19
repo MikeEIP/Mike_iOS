@@ -34,6 +34,15 @@ class AuthService {
         }
     }
     
+    var isLoggedIn: Bool {
+        get {
+            return defaults.bool(forKey: LOGGED_IN)
+        }
+        set {
+            defaults.set(newValue, forKey: LOGGED_IN)
+        }
+    }
+    
     func loginUser(username: String, password: String, completion: @escaping CompletionHandler) {
         
         let body: [String: Any] = [
@@ -49,11 +58,13 @@ class AuthService {
                     let json = try JSON(data: data)
                     self.userEmail = json["username"].stringValue
                     self.accessToken = json["access_token"].stringValue
+                    completion(true)
                 } catch {
                     debugPrint(error)
+                    completion(false)
                 }
-                completion(true)
             } else {
+                self.isLoggedIn = false
                 completion(false)
                 debugPrint(response.result.error as Any)
             }
