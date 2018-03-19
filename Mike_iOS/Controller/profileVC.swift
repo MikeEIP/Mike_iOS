@@ -11,6 +11,7 @@ import UIKit
 class profileVC: UIViewController {
 
     @IBOutlet weak var profilImg: UIImageView!
+    @IBOutlet weak var followBtn: UIButton!
     
     
     override func viewDidLoad()
@@ -23,10 +24,13 @@ class profileVC: UIViewController {
 
     private func setupProfil()
     {
-        self.profilImg.layer.cornerRadius = self.profilImg.frame.size.width / 2
-        self.profilImg.clipsToBounds = true
-        self.profilImg.layer.borderWidth = 2
-        self.profilImg.layer.borderColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        profilImg.layer.cornerRadius = self.profilImg.frame.size.width / 2
+        profilImg.clipsToBounds = true
+        profilImg.layer.borderWidth = 2
+        profilImg.layer.borderColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        
+        followBtn.layer.cornerRadius = followBtn.frame.size.height / 2
+        followBtn.clipsToBounds = true
     }
 
 }
