@@ -8,16 +8,19 @@
 
 import UIKit
 
-class profileVC: UIViewController {
+class profileVC: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
 
     @IBOutlet weak var profilImg: UIImageView!
     @IBOutlet weak var followBtn: UIButton!
+    @IBOutlet weak var friendList: UICollectionView!
     
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
         setupProfil()
+        friendList.delegate = self
+        friendList.dataSource = self
 
     }
 
@@ -33,4 +36,16 @@ class profileVC: UIViewController {
         followBtn.clipsToBounds = true
     }
 
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
+    {
+        return 5
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
+    {
+        let cell = friendList.dequeueReusableCell(withReuseIdentifier: "customCell", for: indexPath)
+        return cell
+    }
+    
+    
 }

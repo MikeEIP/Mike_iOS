@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		170CAB12206003A2003E4008 /* ImageInProfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170CAB11206003A2003E4008 /* ImageInProfilView.swift */; };
 		1765ADB3205E820900BAF294 /* FriendListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1765ADB2205E820900BAF294 /* FriendListVC.swift */; };
 		1765ADB5205F1A4500BAF294 /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1765ADB4205F1A4500BAF294 /* FriendTableViewCell.swift */; };
 		176817E7205BFED30089F22B /* profileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176817E6205BFED30089F22B /* profileVC.swift */; };
@@ -48,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		170CAB11206003A2003E4008 /* ImageInProfilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageInProfilView.swift; sourceTree = "<group>"; };
 		1765ADB2205E820900BAF294 /* FriendListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendListVC.swift; sourceTree = "<group>"; };
 		1765ADB4205F1A4500BAF294 /* FriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FriendTableViewCell.swift; path = Mike_iOS/Controller/FriendTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		176817E6205BFED30089F22B /* profileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileVC.swift; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 			children = (
 				1765ADB4205F1A4500BAF294 /* FriendTableViewCell.swift */,
 				17A253EA205FEEB900623FAA /* InfoTrainingViewCell.swift */,
+				170CAB11206003A2003E4008 /* ImageInProfilView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -540,6 +543,7 @@
 				1765ADB5205F1A4500BAF294 /* FriendTableViewCell.swift in Sources */,
 				3F9F37702059888900BC1C80 /* AuthService.swift in Sources */,
 				1765ADB3205E820900BAF294 /* FriendListVC.swift in Sources */,
+				170CAB12206003A2003E4008 /* ImageInProfilView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
