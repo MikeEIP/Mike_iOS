@@ -14,10 +14,10 @@
 		17A253E5205FC02800623FAA /* TrainingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A253E4205FC02800623FAA /* TrainingVC.swift */; };
 		17A253E7205FE7CB00623FAA /* InfoTrainingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A253E6205FE7CB00623FAA /* InfoTrainingVC.swift */; };
 		17A253EB205FEEB900623FAA /* InfoTrainingViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A253EA205FEEB900623FAA /* InfoTrainingViewCell.swift */; };
+		17E68D62206151A40010652C /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E68D61206151A40010652C /* CircleImage.swift */; };
 		1D3971AC8B7FEE4D2140F50A /* Pods_Mike_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53DBC4F50373C2E17A71DA00 /* Pods_Mike_iOS.framework */; };
 		32ECD41AF96B080F3D6592BA /* Pods_Mike_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 414ADDA80C18250A51365FC3 /* Pods_Mike_iOSUITests.framework */; };
 		3F26596C205C066F00E0A853 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F26596B205C066F00E0A853 /* GradientView.swift */; };
-		3F26596E20613F5500E0A853 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F26596D20613F5500E0A853 /* CircleImage.swift */; };
 		3F9F37642058200400BC1C80 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9F37632058200400BC1C80 /* LoginVC.swift */; };
 		3F9F37672058276900BC1C80 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9F37662058276900BC1C80 /* Utilities.swift */; };
 		3F9F3769205827A500BC1C80 /* Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9F3768205827A500BC1C80 /* Properties.swift */; };
@@ -58,8 +58,8 @@
 		17A253E4205FC02800623FAA /* TrainingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingVC.swift; sourceTree = "<group>"; };
 		17A253E6205FE7CB00623FAA /* InfoTrainingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTrainingVC.swift; sourceTree = "<group>"; };
 		17A253EA205FEEB900623FAA /* InfoTrainingViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTrainingViewCell.swift; sourceTree = "<group>"; };
+		17E68D61206151A40010652C /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		3F26596B205C066F00E0A853 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
-		3F26596D20613F5500E0A853 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CircleImage.swift; path = ../../../../Documents/CircleImage.swift; sourceTree = "<group>"; };
 		3F9F37632058200400BC1C80 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		3F9F37662058276900BC1C80 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		3F9F3768205827A500BC1C80 /* Properties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Properties.swift; sourceTree = "<group>"; };
@@ -142,7 +142,7 @@
 				17A253EA205FEEB900623FAA /* InfoTrainingViewCell.swift */,
 				170CAB11206003A2003E4008 /* ImageInProfilView.swift */,
 				3F26596B205C066F00E0A853 /* GradientView.swift */,
-				3F26596D20613F5500E0A853 /* CircleImage.swift */,
+				17E68D61206151A40010652C /* CircleImage.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -537,7 +537,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				17A253E7205FE7CB00623FAA /* InfoTrainingVC.swift in Sources */,
-				3F26596E20613F5500E0A853 /* CircleImage.swift in Sources */,
+				17E68D62206151A40010652C /* CircleImage.swift in Sources */,
 				17A253E5205FC02800623FAA /* TrainingVC.swift in Sources */,
 				3FED0E462056AD80005F3F4F /* Mike_iOS.xcdatamodeld in Sources */,
 				3FED0E3E2056AD80005F3F4F /* AppDelegate.swift in Sources */,
