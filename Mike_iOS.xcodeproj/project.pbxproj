@@ -50,7 +50,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-	  3F26596B205C066F00E0A853 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		170CAB11206003A2003E4008 /* ImageInProfilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageInProfilView.swift; sourceTree = "<group>"; };
 		1765ADB2205E820900BAF294 /* FriendListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendListVC.swift; sourceTree = "<group>"; };
 		1765ADB4205F1A4500BAF294 /* FriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FriendTableViewCell.swift; path = Mike_iOS/Controller/FriendTableViewCell.swift; sourceTree = SOURCE_ROOT; };
@@ -58,6 +57,7 @@
 		17A253E4205FC02800623FAA /* TrainingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingVC.swift; sourceTree = "<group>"; };
 		17A253E6205FE7CB00623FAA /* InfoTrainingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTrainingVC.swift; sourceTree = "<group>"; };
 		17A253EA205FEEB900623FAA /* InfoTrainingViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTrainingViewCell.swift; sourceTree = "<group>"; };
+		3F26596B205C066F00E0A853 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		3F9F37632058200400BC1C80 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		3F9F37662058276900BC1C80 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		3F9F3768205827A500BC1C80 /* Properties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Properties.swift; sourceTree = "<group>"; };
@@ -715,7 +715,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = AB2WH7NT99;
 				INFOPLIST_FILE = Mike_iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -732,7 +732,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = AB2WH7NT99;
 				INFOPLIST_FILE = Mike_iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
