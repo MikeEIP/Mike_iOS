@@ -13,6 +13,8 @@ class profileVC: UIViewController, UICollectionViewDataSource, UICollectionViewD
     @IBOutlet weak var profilImg: UIImageView!
     @IBOutlet weak var followBtn: UIButton!
     @IBOutlet weak var friendList: UICollectionView!
+    @IBOutlet weak var userPhotosContainer: UIView!
+    @IBOutlet weak var userAchievementsContainer: UIView!
     
     
     override func viewDidLoad()
@@ -21,7 +23,8 @@ class profileVC: UIViewController, UICollectionViewDataSource, UICollectionViewD
         setupProfil()
         friendList.delegate = self
         friendList.dataSource = self
-
+        friendList.layer.cornerRadius = 5
+        userAchievementsContainer.alpha = 0
     }
 
 
@@ -34,6 +37,12 @@ class profileVC: UIViewController, UICollectionViewDataSource, UICollectionViewD
         
         followBtn.layer.cornerRadius = followBtn.frame.size.height / 2
         followBtn.clipsToBounds = true
+        
+        followBtn.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
+        followBtn.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
+        followBtn.layer.shadowOpacity = 1.0
+        followBtn.layer.shadowRadius = 0.0
+        followBtn.layer.masksToBounds = false
     }
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
@@ -47,5 +56,20 @@ class profileVC: UIViewController, UICollectionViewDataSource, UICollectionViewD
         return cell
     }
     
+    @IBAction func showComponent(sender: UISegmentedControl) {
+        if (sender.selectedSegmentIndex == 0) {
+            UIView.animate(withDuration: 0.5, animations: {
+                self.userPhotosContainer.alpha = 1
+                self.userAchievementsContainer.alpha = 0
+                self.userAchievementsContainer.isUserInteractionEnabled = false
+            })
+        } else {
+            UIView.animate(withDuration: 0.5, animations: {
+                self.userPhotosContainer.alpha = 0
+                self.userAchievementsContainer.alpha = 1
+                self.userPhotosContainer.isUserInteractionEnabled = false
+            })
+        }
+    }
     
 }
