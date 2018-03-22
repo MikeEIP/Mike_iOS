@@ -27,6 +27,9 @@ class profileVC: UIViewController, UICollectionViewDataSource, UICollectionViewD
         userAchievementsContainer.alpha = 0
     }
 
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
 
     private func setupProfil()
     {
