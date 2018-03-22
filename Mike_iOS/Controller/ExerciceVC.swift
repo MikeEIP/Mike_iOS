@@ -12,6 +12,7 @@ class ExerciceVC: UIViewController
 {
     @IBOutlet weak var continueBtn: UIButton!
     let counter = CircleGraph()
+    var nbPompe = 0
     
     override func viewDidLoad()
     {
@@ -25,7 +26,14 @@ class ExerciceVC: UIViewController
     
     @objc private func handleTap() {
         print("Attempting to animate stroke")
-
-        counter.animateCircle()
+        
+        counter.pompeCounter()
+        nbPompe += 1
+        if nbPompe == 11
+        {
+            counter.animatePulsatingLayer()
+        }
+       
+        
     }
 }

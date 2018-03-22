@@ -13,6 +13,7 @@ class CircleGraph
 {
     var shapeLayer: CAShapeLayer!
     var pulsatingLayer: CAShapeLayer!
+    var pompe: CGFloat = 0.0
     
     let percentageLabel: UILabel = {
         let label = UILabel()
@@ -59,17 +60,16 @@ class CircleGraph
         percentageLabel.center = View.center
     }
     
-    
-     func animateCircle() {
+    func pompeCounter()
+    {
         let basicAnimation = CABasicAnimation(keyPath: "strokeEnd")
-        
-        basicAnimation.toValue = 1
-        
+        basicAnimation.toValue = pompe / 1
         basicAnimation.duration = 2
-        
         basicAnimation.fillMode = kCAFillModeForwards
         basicAnimation.isRemovedOnCompletion = false
         
+        pompe += 0.1
+        shapeLayer.strokeEnd = pompe
         shapeLayer.add(basicAnimation, forKey: "urSoBasic")
     }
     
@@ -86,12 +86,12 @@ class CircleGraph
         pulsatingLayer.add(animation, forKey: "pulsing")
     }
     
-    @objc  func handleTap() {
-        print("Attempting to animate stroke")
+  //  @objc  func handleTap() {
+    //    print("Attempting to animate stroke")
         
         //   beginDownloadingFile()
         
-        animateCircle()
-    }
+      //  animateCircle()
+    //}
     
 }
