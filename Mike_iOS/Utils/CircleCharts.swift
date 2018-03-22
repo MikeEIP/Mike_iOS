@@ -70,7 +70,7 @@ class CircleGraph
         
         pompe += 0.1
         shapeLayer.strokeEnd = pompe
-        shapeLayer.add(basicAnimation, forKey: "urSoBasic")
+        //shapeLayer.add(basicAnimation, forKey: "urSoBasic")
     }
     
     func animatePulsatingLayer()
