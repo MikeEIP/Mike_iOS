@@ -58,6 +58,10 @@ class TrainingVC: UIViewController {
         setupPercentageLabel()
     }
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     private func setupPercentageLabel() {
         view.addSubview(percentageLabel)
         percentageLabel.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
