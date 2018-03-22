@@ -75,4 +75,8 @@ class profileVC: UIViewController, UICollectionViewDataSource, UICollectionViewD
         }
     }
     
+    @IBAction func followPressed(_ sender: Any) {
+        performSegue(withIdentifier: "toWorkout", sender: nil)
+    }
+    
 }

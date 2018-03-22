@@ -28,7 +28,7 @@ class ExerciceVC: UIViewController
         
         motion.accelerometerUpdateInterval = 0.1
         
-        motion.gyroUpdateInterval = 0.6
+        motion.gyroUpdateInterval = 0.5
         
         motion.startGyroUpdates(to: OperationQueue.current!) { (data, error) in
             var tilted = 0
@@ -52,11 +52,11 @@ class ExerciceVC: UIViewController
         
         counter.pompeCounter()
         nbPompe = nbPompe + 1
-        if nbPompe == 11
+        if nbPompe == 10
         {
             counter.animatePulsatingLayer()
         }
-       
+        
         
     }
 }

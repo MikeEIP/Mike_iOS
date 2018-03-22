@@ -60,7 +60,6 @@ class LoginVC: UIViewController {
         print("Register Tapped")
     }
     
-    @IBAction func prepareForUnwind(segue: UIStoryboardSegue) {
-    }
+    
     
 }
