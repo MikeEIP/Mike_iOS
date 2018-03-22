@@ -17,7 +17,7 @@ class TrainingVC: UIViewController {
     {
         animatePulsatingLayer()
     }
-    
+
     var shapeLayer: CAShapeLayer!
     var pulsatingLayer: CAShapeLayer!
     
@@ -66,6 +66,7 @@ class TrainingVC: UIViewController {
     
     private func setupCircleLayers() {
         pulsatingLayer = createCircleShapeLayer(strokeColor: .clear, fillColor: UIColor.pulsatingFillColor)
+        
         view.layer.addSublayer(pulsatingLayer)
         animatePulsatingLayer()
         
@@ -73,7 +74,6 @@ class TrainingVC: UIViewController {
         view.layer.addSublayer(trackLayer)
         
         shapeLayer = createCircleShapeLayer(strokeColor: .outlineStrokeColor, fillColor: .clear)
-        
         shapeLayer.transform = CATransform3DMakeRotation(-CGFloat.pi / 2, 0, 0, 1)
         shapeLayer.strokeEnd = 0
         view.layer.addSublayer(shapeLayer)
@@ -90,7 +90,6 @@ class TrainingVC: UIViewController {
         
         pulsatingLayer.add(animation, forKey: "pulsing")
     }
-    
     
     
     fileprivate func animateCircle() {

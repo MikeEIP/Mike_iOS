@@ -372,7 +372,7 @@
                                     <color key="titleColor" red="1" green="0.50980392159999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="tWB-Mm-hxO" kind="show" id="BrK-Fc-B4C"/>
+                                    <segue destination="tWB-Mm-hxO" kind="show" id="zyg-lZ-ocF"/>
                                 </connections>
                             </button>
                             <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ARK-wx-QkE">
@@ -392,7 +392,7 @@
                         <viewLayoutGuide key="safeArea" id="YCl-SV-ApX"/>
                     </view>
                     <connections>
-                        <outlet property="trainingBtn" destination="y1w-8N-vim" id="ClH-CQ-fxR"/>
+                        <outlet property="trainingBtn" destination="y1w-8N-vim" id="2Nd-cz-QKk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UMU-Y8-jNT" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -459,7 +459,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="trainingBtnPressed:" destination="6Rn-Ch-aPI" eventType="touchUpInside" id="HWd-Ed-ZWX"/>
+                                    <segue destination="JaL-7s-srA" kind="show" id="DGE-U9-dts"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -467,13 +467,41 @@
                         <viewLayoutGuide key="safeArea" id="919-av-C1p"/>
                     </view>
                     <connections>
-                        <outlet property="beginTraining" destination="aq1-Pc-PUa" id="ZNW-G3-Osn"/>
+                        <outlet property="beginTraining" destination="aq1-Pc-PUa" id="GYc-Ba-uzI"/>
                         <outlet property="collectionView" destination="ReM-F9-Stg" id="939-XW-iC4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DyK-dX-PjN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3747.826086956522" y="2657.608695652174"/>
+        </scene>
+        <!--ExerciceVC-->
+        <scene sceneID="aUs-Wr-pIY">
+            <objects>
+                <viewController id="JaL-7s-srA" customClass="ExerciceVC" customModule="Mike_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OCZ-cO-xEb" customClass="GradientView" customModule="Mike_iOS" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7HC-cV-gXe">
+                                <rect key="frame" x="88" y="662" width="239" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Begin training">
+                                    <color key="titleColor" red="1" green="0.50980392159999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="p2Y-Ol-109"/>
+                    </view>
+                    <connections>
+                        <outlet property="continueBtn" destination="7HC-cV-gXe" id="kPX-KF-gmM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BPJ-99-0Qb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4623" y="2658"/>
         </scene>
         <!--ArticleVC-->
         <scene sceneID="qYL-wJ-dgz">
