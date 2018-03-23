@@ -676,34 +676,22 @@
                                             <segue destination="70g-kG-4Ud" kind="show" id="ujW-Ss-Rgt"/>
                                         </connections>
                                     </button>
-                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="pzH-dJ-n5g">
-                                        <rect key="frame" x="8" y="8" width="344" height="72"/>
+                                    <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img1" translatesAutoresizingMaskIntoConstraints="NO" id="6cq-5b-MDx" customClass="CircleImage" customModule="Mike_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="18" y="14" width="60" height="60"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="q64-wf-B2h">
-                                            <size key="itemSize" width="65" height="68"/>
-                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                            <inset key="sectionInset" minX="4" minY="2" maxX="0.0" maxY="0.0"/>
-                                        </collectionViewFlowLayout>
-                                        <cells>
-                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="customCell" id="sE0-Ha-uQe">
-                                                <rect key="frame" x="4" y="3" width="65" height="68"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                                    <rect key="frame" x="0.0" y="0.0" width="65" height="68"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4EC-HP-TSx" customClass="CircleImage" customModule="Mike_iOS" customModuleProvider="target">
-                                                            <rect key="frame" x="2" y="4" width="60" height="60"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <color key="backgroundColor" red="0.56470588239999997" green="0.56078431370000004" blue="0.56078431370000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        </imageView>
-                                                    </subviews>
-                                                </view>
-                                            </collectionViewCell>
-                                        </cells>
-                                    </collectionView>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img2" translatesAutoresizingMaskIntoConstraints="NO" id="Ss1-hb-sg0" customClass="CircleImage" customModule="Mike_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="95" y="14" width="60" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img3" translatesAutoresizingMaskIntoConstraints="NO" id="EbL-J1-zdw" customClass="CircleImage" customModule="Mike_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="170" y="14" width="60" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img4" translatesAutoresizingMaskIntoConstraints="NO" id="LTF-4Q-UAb" customClass="CircleImage" customModule="Mike_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="245" y="14" width="60" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
@@ -752,7 +740,10 @@
                     </view>
                     <connections>
                         <outlet property="followBtn" destination="iLw-ZA-BHx" id="ipi-x8-tis"/>
-                        <outlet property="friendList" destination="pzH-dJ-n5g" id="lZ6-wh-l8o"/>
+                        <outlet property="img1" destination="6cq-5b-MDx" id="Ahk-XJ-vfi"/>
+                        <outlet property="img2" destination="Ss1-hb-sg0" id="6h5-zJ-JwI"/>
+                        <outlet property="img3" destination="EbL-J1-zdw" id="NgM-0q-jrS"/>
+                        <outlet property="img4" destination="LTF-4Q-UAb" id="3J2-93-CC7"/>
                         <outlet property="profilImg" destination="oDU-UM-r5g" id="lpD-fM-rAv"/>
                         <outlet property="userAchievementsContainer" destination="H6I-me-Xpe" id="9Cf-qc-0F0"/>
                         <outlet property="userPhotosContainer" destination="OFE-HV-0YC" id="Aad-Q2-9iN"/>
@@ -926,6 +917,10 @@
     <resources>
         <image name="Image" width="3024" height="4032"/>
         <image name="backbutton" width="10" height="17"/>
+        <image name="img1" width="3024" height="4032"/>
+        <image name="img2" width="3024" height="4032"/>
+        <image name="img3" width="3024" height="4032"/>
+        <image name="img4" width="2320" height="3088"/>
         <image name="jean" width="80" height="80"/>
         <image name="logo mike" width="2480" height="3508"/>
         <image name="push_up" width="904" height="460"/>
