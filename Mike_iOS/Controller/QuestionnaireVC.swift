@@ -1,6 +1,6 @@
 //
 //  questionnaireVC.swift
-//  Mike_iOS
+//  Mike_iOS 
 //
 //  Created by Jordan Vacca on 22/03/2018.
 //  Copyright © 2018 JeremyP. All rights reserved.
@@ -23,7 +23,6 @@ class QuestionnaireVC: UIViewController
     
     let tableau = ["Jamais","Un peu","De temps en temps","Régulièrement","Quotidiennement"]
     
-    
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -35,6 +34,9 @@ class QuestionnaireVC: UIViewController
         nextBtn.clipsToBounds = true
     }
     
+    override var preferredStatusBarStyle: UIStatusBarStyle  {
+        return .lightContent
+    }
     
     func refreshingActivite()
     {
@@ -64,7 +66,6 @@ class QuestionnaireVC: UIViewController
         refreshingPoid()
     }
     
-    
     @IBAction func sliderSizeValue(_ sender: UISlider)
     {
         refreshingSize()
@@ -73,6 +74,5 @@ class QuestionnaireVC: UIViewController
     @IBAction func sliderActiviteValue(_ sender: UISlider)
     {
         refreshingActivite()
-    }
-    
+    } 
 }
