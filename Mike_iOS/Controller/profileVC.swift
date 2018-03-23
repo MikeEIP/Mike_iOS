@@ -8,23 +8,43 @@
 
 import UIKit
 
-class profileVC: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+class profileVC: UIViewController {
 
     @IBOutlet weak var profilImg: UIImageView!
     @IBOutlet weak var followBtn: UIButton!
-    @IBOutlet weak var friendList: UICollectionView!
+    //@IBOutlet weak var friendList: UICollectionView!
     @IBOutlet weak var userPhotosContainer: UIView!
     @IBOutlet weak var userAchievementsContainer: UIView!
+    @IBOutlet weak var img1: CircleImage!
+    @IBOutlet weak var img2: CircleImage!
+    @IBOutlet weak var img3: CircleImage!
+    @IBOutlet weak var img4: CircleImage!
     
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
         setupProfil()
-        friendList.delegate = self
-        friendList.dataSource = self
-        friendList.layer.cornerRadius = 5
+        //friendList.delegate = self
+        //friendList.dataSource = self
+        //friendList.layer.cornerRadius = 5
         userAchievementsContainer.alpha = 0
+        
+        img1.layer.borderWidth = 2
+        img1.layer.borderColor = #colorLiteral(red: 0.5647058824, green: 0.5607843137, blue: 0.5607843137, alpha: 1)
+        img1.transform = img1.transform.rotated(by: CGFloat(M_PI_2))
+        
+        img2.layer.borderWidth = 2
+        img2.layer.borderColor = #colorLiteral(red: 0.5647058824, green: 0.5607843137, blue: 0.5607843137, alpha: 1)
+        
+        img3.layer.borderWidth = 2
+        img3.layer.borderColor = #colorLiteral(red: 0.5647058824, green: 0.5607843137, blue: 0.5607843137, alpha: 1)
+        
+        img4.layer.borderWidth = 2
+        img4.layer.borderColor = #colorLiteral(red: 0.5647058824, green: 0.5607843137, blue: 0.5607843137, alpha: 1)
+        img4.transform = img4.transform.rotated(by: CGFloat(M_PI_2))
+        
+
     }
 
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -48,7 +68,7 @@ class profileVC: UIViewController, UICollectionViewDataSource, UICollectionViewD
         followBtn.layer.masksToBounds = false
     }
 
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
+    /*func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
     {
         return 5
     }
@@ -57,7 +77,7 @@ class profileVC: UIViewController, UICollectionViewDataSource, UICollectionViewD
     {
         let cell = friendList.dequeueReusableCell(withReuseIdentifier: "customCell", for: indexPath)
         return cell
-    }
+    }*/
     
     @IBAction func showComponent(sender: UISegmentedControl) {
         if (sender.selectedSegmentIndex == 0) {
@@ -73,6 +93,10 @@ class profileVC: UIViewController, UICollectionViewDataSource, UICollectionViewD
                 self.userPhotosContainer.isUserInteractionEnabled = false
             })
         }
+    }
+    
+    @IBAction func followPressed(_ sender: Any) {
+        performSegue(withIdentifier: "toWorkout", sender: nil)
     }
     
 }
