@@ -42,7 +42,7 @@ class CircleGraph
     
     
     
-     func createCircleShapeLayer(strokeColor: UIColor, fillColor: UIColor, View: UIView) -> CAShapeLayer {
+    func createCircleShapeLayer(strokeColor: UIColor, fillColor: UIColor, View: UIView) -> CAShapeLayer {
         let layer = CAShapeLayer()
         let circularPath = UIBezierPath(arcCenter: .zero, radius: 100, startAngle: 0, endAngle: 2 * CGFloat.pi, clockwise: true)
         layer.path = circularPath.cgPath
@@ -54,10 +54,17 @@ class CircleGraph
         return layer
     }
     
-    func setupPercentageLabel(View: UIView) {
+    func setupPercentageLabel(View: UIView, LblName: String) {
         View.addSubview(percentageLabel)
+        percentageLabel.text = LblName
         percentageLabel.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
         percentageLabel.center = View.center
+    }
+    
+    func refreshingTxt(View: UIView, newLbl: String)
+    {
+        percentageLabel.text = newLbl
+        View.addSubview(percentageLabel)
     }
     
     func pompeCounter()
@@ -70,7 +77,7 @@ class CircleGraph
         
         pompe += 0.1
         shapeLayer.strokeEnd = pompe
-       // shapeLayer.add(basicAnimation, forKey: "urSoBasic")
+        // shapeLayer.add(basicAnimation, forKey: "urSoBasic")
     }
     
     func animatePulsatingLayer()
@@ -86,12 +93,12 @@ class CircleGraph
         pulsatingLayer.add(animation, forKey: "pulsing")
     }
     
-  //  @objc  func handleTap() {
+    //  @objc  func handleTap() {
     //    print("Attempting to animate stroke")
-        
-        //   beginDownloadingFile()
-        
-      //  animateCircle()
+    
+    //   beginDownloadingFile()
+    
+    //  animateCircle()
     //}
     
 }

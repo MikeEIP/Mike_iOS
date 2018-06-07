@@ -13,12 +13,11 @@ class profileVC: UIViewController {
     @IBOutlet weak var profilImg: UIImageView!
     @IBOutlet weak var followBtn: UIButton!
     //@IBOutlet weak var friendList: UICollectionView!
-    @IBOutlet weak var userPhotosContainer: UIView!
-    @IBOutlet weak var userAchievementsContainer: UIView!
     @IBOutlet weak var img1: CircleImage!
     @IBOutlet weak var img2: CircleImage!
     @IBOutlet weak var img3: CircleImage!
     @IBOutlet weak var img4: CircleImage!
+    @IBOutlet weak var profileView: GradientView!
     
     
     override func viewDidLoad()
@@ -28,7 +27,6 @@ class profileVC: UIViewController {
         //friendList.delegate = self
         //friendList.dataSource = self
         //friendList.layer.cornerRadius = 5
-        userAchievementsContainer.alpha = 0
         
         img1.layer.borderWidth = 2
         img1.layer.borderColor = #colorLiteral(red: 0.5647058824, green: 0.5607843137, blue: 0.5607843137, alpha: 1)
@@ -66,6 +64,11 @@ class profileVC: UIViewController {
         followBtn.layer.shadowOpacity = 1.0
         followBtn.layer.shadowRadius = 0.0
         followBtn.layer.masksToBounds = false
+        
+        profilImg.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
+        profilImg.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
+        profilImg.layer.shadowOpacity = 1.0
+        profilImg.layer.shadowRadius = 0.0
     }
 
     /*func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
@@ -79,7 +82,7 @@ class profileVC: UIViewController {
         return cell
     }*/
     
-    @IBAction func showComponent(sender: UISegmentedControl) {
+    /*@IBAction func showComponent(sender: UISegmentedControl) {
         if (sender.selectedSegmentIndex == 0) {
             UIView.animate(withDuration: 0.5, animations: {
                 self.userPhotosContainer.alpha = 1
@@ -93,7 +96,7 @@ class profileVC: UIViewController {
                 self.userPhotosContainer.isUserInteractionEnabled = false
             })
         }
-    }
+    }*/
     
     @IBAction func followPressed(_ sender: Any) {
         performSegue(withIdentifier: "toWorkout", sender: nil)
