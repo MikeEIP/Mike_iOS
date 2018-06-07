@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ImageInProfilView: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+class ImageInProfilView: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate  {
 
     @IBOutlet weak var tableView: UICollectionView!
     
@@ -22,12 +22,12 @@ class ImageInProfilView: UIViewController, UICollectionViewDataSource, UICollect
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
     {
-        return 10
+        return 5
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
     {
-        let cell = tableView.dequeueReusableCell(withReuseIdentifier: "customCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withReuseIdentifier: "imgCell", for: indexPath)
         return cell
     }
     

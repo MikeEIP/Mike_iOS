@@ -32,6 +32,7 @@ class QuestionnaireVC: UIViewController
         
         nextBtn.layer.cornerRadius = nextBtn.frame.size.height / 2
         nextBtn.clipsToBounds = true
+        Properties.sharedInstance.designUIButton(button: nextBtn)
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle  {
@@ -74,5 +75,9 @@ class QuestionnaireVC: UIViewController
     @IBAction func sliderActiviteValue(_ sender: UISlider)
     {
         refreshingActivite()
-    } 
+    }
+    
+    @IBAction func nextPressed(_ sender: Any) {
+        performSegue(withIdentifier: "unwind", sender: self)
+    }
 }

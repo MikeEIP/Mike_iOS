@@ -46,7 +46,14 @@ class RegisterVC: UIViewController {
         
         guard let username = usernameTextField.text , usernameTextField.text != "" else { return }
         
-        guard let password = passwordTextField.text , passwordTextField.text != "" else { return }
+        guard let password = passwordTextField.text , passwordTextField.text != "", passwordTextField.text?.isASecurePassword == true else {
+            UIView.animate(withDuration: 1.0, delay: 0.0, options: [], animations: {
+                self.passwordTextField.shake()
+                self.confirmPasswordTextField.shake()
+                self.setAlertAction()
+            }, completion: nil)
+            return
+        }
         
         guard let birthday = birthdate.titleLabel?.text, birthdate.titleLabel?.text != "" else { return }
         
@@ -76,4 +83,26 @@ class RegisterVC: UIViewController {
         performSegue(withIdentifier: "toLogin", sender: nil)
     }
     
+    @IBAction func questionPressed(_ sender: Any) {
+        performSegue(withIdentifier: "toQuestions", sender: nil)
+    }
+    
+    @IBAction func unwind(segue:UIStoryboardSegue) { }
+    
+    @IBAction func dismissVC(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    func setAlertAction() {
+        let alertController = UIAlertController(title: nil, message: "Password must be at leat 8 characters containing a-z, A-Z, 0-6", preferredStyle: .alert)
+        
+        let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default) {
+            UIAlertAction in
+            NSLog("OK Pressed")
+        }
+        
+        alertController.addAction(okAction)
+        
+        self.present(alertController, animated: true, completion: nil)
+    }
 }

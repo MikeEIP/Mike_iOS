@@ -8,12 +8,13 @@
 
 import UIKit
 import CoreMotion
-
+@IBDesignable
 class ExerciceVC: UIViewController
 {
     @IBOutlet weak var continueBtn: UIButton!
     let counter = CircleGraph()
     var nbPompe = 0.0
+    var lblCount = 0
     var motion = CMMotionManager()
     
     override func viewDidLoad()
@@ -24,7 +25,7 @@ class ExerciceVC: UIViewController
         continueBtn.clipsToBounds = true
         counter.setupCG(View: self.view)
         view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleTap)))
-        counter.setupPercentageLabel(View: self.view)
+        counter.setupPercentageLabel(View: self.view, LblName: String(lblCount) + "/10")
         
         motion.accelerometerUpdateInterval = 0.1
         
@@ -52,8 +53,11 @@ class ExerciceVC: UIViewController
         
         counter.pompeCounter()
         nbPompe = nbPompe + 1
+        lblCount = lblCount + 1
+        counter.refreshingTxt(View: self.view, newLbl: (String(lblCount) + "/10"))
         if nbPompe == 10
         {
+            counter.percentageLabel.textColor = #colorLiteral(red: 0.9607843161, green: 0.7058823705, blue: 0.200000003, alpha: 1)
             counter.animatePulsatingLayer()
         }
         
