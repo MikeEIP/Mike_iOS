@@ -12,6 +12,7 @@ import DatePickerDialog
 class RegisterVC: UIViewController {
     
     //Outlets
+    @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var confirmPasswordTextField: UITextField!
@@ -39,18 +40,35 @@ class RegisterVC: UIViewController {
                 formatter.dateFormat = "dd/MM/yyyy"
                 self.birthdate.setTitle(formatter.string(from: dt), for: .normal)
             }
+            let dateOfBirth = date
+            
+            let today = NSDate()
+            
+            let gregorian = NSCalendar(calendarIdentifier: NSCalendar.Identifier.gregorian)!
+            
+            let age = gregorian.components([.year], from: dateOfBirth!, to: today as Date, options: [])
+            
+            if age.year! < 16 {
+                self.setAlertAction(message: "You must be 16 years old.")
+                self.datePickerTapped()
+            }
         }
     }
     
     @IBAction func createAccountPressed(_ sender: Any) {
         
-        guard let username = usernameTextField.text , usernameTextField.text != "" else { return }
+        guard let email = emailTextField.text, emailTextField.text != "", emailTextField.text?.isEmail == true else {
+            self.emailTextField.shake()
+            self.setAlertAction(message: "Please enter a valid e-mail")
+            return
+        }
+        guard let username = usernameTextField.text, usernameTextField.text != "" else { return }
         
-        guard let password = passwordTextField.text , passwordTextField.text != "", passwordTextField.text?.isASecurePassword == true else {
+        guard let password = passwordTextField.text, passwordTextField.text != "", passwordTextField.text?.isASecurePassword == true else {
             UIView.animate(withDuration: 1.0, delay: 0.0, options: [], animations: {
                 self.passwordTextField.shake()
                 self.confirmPasswordTextField.shake()
-                self.setAlertAction()
+                self.setAlertAction(message: "Password must be at leat 8 characters containing a-z, A-Z, 0-6")
             }, completion: nil)
             return
         }
@@ -66,13 +84,14 @@ class RegisterVC: UIViewController {
             return
         }
         
-        AuthService.sharedInstance.registerUser(username: username, password: password, birthdate: birthday) { (success) in
+        AuthService.sharedInstance.registerUser(email: email, username: username, password: password, birthdate: birthday) { (success) in
             self.createAccountButton.setTitle("", for: .normal)
             self.createAccountButton.loadingIndicator(show: true)
             if success {
                 print("User \(username) created")
                 self.createAccountButton.setTitle("Success", for: .normal)
                 self.createAccountButton.loadingIndicator(show: false)
+                self.performSegue(withIdentifier: "toLogin", sender: nil)
             } else {
                 print("Can't creat User")
             }
@@ -93,8 +112,8 @@ class RegisterVC: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
-    func setAlertAction() {
-        let alertController = UIAlertController(title: nil, message: "Password must be at leat 8 characters containing a-z, A-Z, 0-6", preferredStyle: .alert)
+    func setAlertAction(message: String) {
+        let alertController = UIAlertController(title: nil, message: message, preferredStyle: .alert)
         
         let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default) {
             UIAlertAction in

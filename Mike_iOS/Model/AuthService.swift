@@ -71,13 +71,13 @@ class AuthService {
         }
     }
     
-    func registerUser(username: String, password: String, birthdate: String, completion: @escaping CompletionHandler) {
+    func registerUser(email: String, username: String, password: String, birthdate: String, completion: @escaping CompletionHandler) {
         
         let body: [String: Any] = [
             "username": username,
             "lastname": LAST_NAME,
             "firstname": FIRST_NAME,
-            "email": USER_EMAIL,
+            "email": email,
             "birthday": birthdate,
             "country": COUNTRY,
             "city": CITY,
