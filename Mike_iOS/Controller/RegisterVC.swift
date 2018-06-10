@@ -91,7 +91,6 @@ class RegisterVC: UIViewController {
                 print("User \(username) created")
                 self.createAccountButton.setTitle("Success", for: .normal)
                 self.createAccountButton.loadingIndicator(show: false)
-                self.performSegue(withIdentifier: "toLogin", sender: nil)
             } else {
                 print("Can't creat User")
             }
